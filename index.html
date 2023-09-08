@@ -20,6 +20,7 @@
        <li>Show you how to program a web document with JavaScript</li>
     </ul>
 
+  
   <p>Next, I am going to multiply the following two numbers and display the result, all with JavaScript</p>
     <p>First number:<span id= "firstNum">58</span> <br></p>
     <p>Second number: <span id= "secondNum">100</span> </p>
@@ -27,7 +28,27 @@
     <input type="button" id="productButton" value="Click to multiply!">
     <p>Lastly, the difference of the two of those numbers is: <span id= "answer2">(placeholder for the answer)</span></p>
     <input type="button" id="differenceButton" value="Click to subtruct!">
-</body>
 
-  
+  <script> 
+    function displayProduct() {
+      let firstNum = Number(document.getElementById('firstNum').innerHTML);
+      let secondNum = Number(document.getElementById('secondNum').innerHTML);
+
+      let product = firstNum * secondNum;
+      document.getElementById("answer1").innerHTML = `The product of ${firstNum} and ${secondNum} is: ${product}`;
+    }
+
+    document.getElementById('productButton').addEventListener("click", displayProduct);
+
+    function displayDifference() {
+      let firstNum = Number(document.getElementById('firstNum').innerHTML);
+      let secondNum = Number(document.getElementById('secondNum').innerHTML);
+
+      let difference = firstNum - secondNum;
+      document.getElementById("answer2").innerHTML = `The difference between ${firstNum} and ${secondNum} is: ${difference}`;
+    }
+
+    document.getElementById('differenceButton').addEventListener("click", displayDifference);
+  </script> 
+</body>
 </html>
