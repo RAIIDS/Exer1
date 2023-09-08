@@ -3,10 +3,10 @@ function displayProduct() {
   let secondNum = Number(document.getElementById('secondNum').innerHTML)
 
   let total = firstNum * secondNum;
-  document.getElementById("result").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+  document.getElementById("prodresult").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
 }
 
-document.getElementById('sumButton').addEventListener("click", displaySum);
+document.getElementById('prodButton').addEventListener("click", displayProduct);
 
 
 function displayDiff() {
@@ -18,3 +18,4 @@ let total = firstNum - secondNum;
   document.getElementById("result").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
 }
 
+document.getElementById('subButton').addEventListener("click", displayDifference);
