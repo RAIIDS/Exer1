@@ -31,14 +31,14 @@
 
   <script> 
     function displayProduct() {
-      let firstNum = Number(document.getElementById('firstNum').innerHTML);
-      let secondNum = Number(document.getElementById('secondNum').innerHTML);
+      let firstNum = Number(getElementById('firstNum').innerHTML);
+      let secondNum = Number(getElementById('secondNum').innerHTML);
 
       let product = firstNum * secondNum;
-      document.getElementById("answer1").innerHTML = `The product of ${firstNum} and ${secondNum} is: ${product}`;
+      getElementById("answer1").innerHTML = `The product of ${firstNum} and ${secondNum} is: ${product}`;
     }
 
-    document.getElementById('productButton').addEventListener("click", displayProduct);
+      getElementById('productButton').addEventListener("click", displayProduct);
 
     function displayDifference() {
       let firstNum = Number(document.getElementById('firstNum').innerHTML);
