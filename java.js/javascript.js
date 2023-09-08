@@ -1,3 +1,4 @@
+<script> 
 function displayProduct() {
   let firstNum = Number(document.getElementById('firstNum').innerHTML);
   let secondNum = Number(document.getElementById('secondNum').innerHTML);
@@ -7,7 +8,9 @@ function displayProduct() {
 }
 
 document.getElementById('productButton').addEventListener("click", displayProduct);
+</script> 
 
+<script> 
 function displayDifference() {
   let firstNum = Number(document.getElementById('firstNum').innerHTML);
   let secondNum = Number(document.getElementById('secondNum').innerHTML);
@@ -17,3 +20,4 @@ function displayDifference() {
 }
 
 document.getElementById('differenceButton').addEventListener("click", displayDifference);
+</script> 
